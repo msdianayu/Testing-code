@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+			<title> This is in the tab on the browser!</title>
+			<link rel="Stylesheet" type="text/css" href="style.css">
+			<!--creates a separate page for css styling only - so you can adjust image sizes, etc. here. You could technically build it all into the html directly in the head, but it is cleaner if you don't - most developers do this and link it to html-->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+			<!--this creates a link to another file foor Bootstrap-->
+			<div
+		</div>
+	</head>
+	<body>
+    	<header>
+	    	<div class="container">
+				<div class="jumbotron">
+					<h1>Let's play!</h1>
+						<p class="lead">Some description e.g., A tutorial for playing indoor volleyball
+						</p>
+						<p>
+							<a class="btn btn-lg btn-success" href="#" role="button">See more</a>
+							<!--# here --- the button takes you to that tag / page. Like another page of the website-->
+						</p> 
+					</div>
+	    		</div>
+	    	</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		 	<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data- toggle="collapse" data-target="#navbar" aria-expanded="false" aria- controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Awesome Project</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li> 
+						<li><a href="#overview">Overview</a></li> 
+						<li><a href="#features">Find teams</a></li>
+                	</ul>
+           		</div><!--/.nav-collapse -->
+     		</div>
+		</nav>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    			<div class="carousel-inner" role="listbox">
+        			<div class="item active">
+             			<center> <img src= "http://noahjags.org/wp-content/uploads/2014/04/Volleyball-banner.jpg"> </center>
+        		</div>
+        			<div class="item">
+             			<center> <img src="https://stillmed.olympic.org/media/Photos/2016/08/21/part-1/21-08-2016-Volleyball-Men-02.jpg"> </center>
+        		</div>
+    		</div>
+    	 <script type="text/javascript">
+			$(document).ready(function() { $("#myCarousel").carousel({interval: 5000});
+      		});
+      		//higher the number like 5000 the slower the speed
+		</script>
+    	<h1> This is a header. </h1>
+		<h2> Testing heading 2 </h2>
+		<style>
+				h1 {
+					/*Changing header / title font colors and sizes*/
+					color:orange;
+					text-align: center;
+				h2 {color:green;
+					font-size:25px;
+					text-align: center;
+				img {
+					height: 50%;
+					width: 50%;
+					text-align: center;
+				p {
+					text-align: center;
+				<img class = "pic2" src="https://stillmed.olympic.org/media/Photos/2016/08/21/part-1/21-08-2016-Volleyball-Men-02.jpg">
+					#pic2 {
+						height: 200px;
+						width: 150px;
+				}
+			</style>	
+		<p id="myparagraph"> </p>
+		<button type="button" onclick="document.getElementById('myparagraph').innerHTML='Learn how to play'">Click</button>
+		<!--"learn how to play" is supposed to appear where 'my paragraph' is-->
+		<p> This <strong> is </strong> a paragraph. </p><br>
+		<a href="http://www.google.com">This is a hyperlink</a>
+		<center> <img src="http://www.longbeachny.gov/vertical/Sites/%7BC3C1054A-3D3A-41B3-8896-814D00B86D2A%7D/uploads/bigstock-Beach-Volleyball-Silhouette-81799844_(1).jpg"> </center>
+		<ul style="list-style-type:square">
+			<li> Rules </li>
+			<li> Positions </li>
+		<!--This is a comment without affecting the actual code -->
+		</ul>		
+		<div>
+				<h2>Volleyball basics </h2>
+				<!--volleyball basics is a header #2 so will follow format given above-->
+				<p>
+						Volleyball is a <span style="color:red">team</span> sport.
+		</body>
+		</div>
+					<div class="container">
+   			 <div class="row">
+				<div class="col-sm-4"><img src="http://24.media.tumblr.com/tumblr_m83bs6qMUR1qcvjzso1_500.jpg"></div>
+				<div class="col-sm-4"><img src="http://f.tqn.com/y/volleyball/1/L/d/-/-/-/vbset.jpg"></div>
+				<div class="col-sm-4"><img src="http://grfx.cstv.com/photos/schools/tenn/sports/w-volley/auto_original/2949849.jpeg?1367595965"></div>
+			</div>
+			<div class="row">
+	  			<div class="col-md-4">Hitter</div>
+	  			<div class="col-md-4">Setter</div>
+	  			<div class="col-md-4">Defensive specialist</div>
+	  			<!--bootstrap might change formatting-->
+	    	</div>	
+	   	<p id="prettyParagraph"> Random text </p>
+	   	<button type = "button" onclick="applyStyling()">Make it Pretty!</button>
+	   	<script>
+	   		function applyStyling() {
+	   			var paragraph = document.getElementById("prettyParagraph"); 
+	   			paragraph.style.color = "purple";
+				paragraph.style.fontSize = "29px";
+				paragraph.style.fontWeight = "700";
+	   		}
+	   	</script>
+	   	<input id="numericInput" type ="number">
+	   	<button type = "button" onclick="testInput()">Test Input</button>
+	   	<script>
+	   		function testInput() {
+			// Create variable to store test result
+			var text;
+			// Get the value of the input field with id="numericInput"
+			var x = document.getElementById("numericInput").value;
+			if (isNaN(x) || x < 0 || x > 99) {
+                text = "Wrong input";
+           	} else {
+                text = "Correct input";
+           	}
+           	// Display result
+			document.getElementById("result").innerHTML = text; 
+			}
+			// javascript you use // to make comments
+		</script>
+	   	<p id="result"></p>
+	   	<script>
+			var result = 5+3;
+			alert ("5+3 is " + result);
+			<!--note that some stuff is quotes --- quotes - what ever is inside is text, don't need to calcualte--> 
+		</script>
+	  </body>
+
+</html>			

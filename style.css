@@ -1,0 +1,15 @@
+body {background-color: white;}
+
+img {
+		height: 50%;
+		width: 50%;
+	}
+
+<img class = "vball_smaller" src="http://www.longbeachny.gov/vertical/Sites/%7BC3C1054A-3D3A-41B3-8896-814D00B86D2A%7D/uploads/bigstock-Beach-Volleyball-Silhouette-81799844_(1).jpg">
+<!--Can't use html in css! So this would'nt work in css-->
+
+#vball_smaller {
+	height: 50%;
+	width: 50%;
+	<!--For some reason, this is not working... if i remove the img size that is not specific to the vball image, the sizing doesn't work anymore-->
+}
